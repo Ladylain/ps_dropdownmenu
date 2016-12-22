@@ -1,0 +1,178 @@
+nav{position: relative;z-index:1;
+width: 1200px;
+top: -80px;
+
+margin:0 auto;
+background: rgba(255,255,255,0);
+background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,10,10,1) 10%, rgba(255,10,10,1) 90%, rgba(255,255,255,0) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(10%, rgba(255,10,10,1)), color-stop(90%, rgba(255,10,10,1)), color-stop(100%, rgba(255,255,255,0)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,10,10,1) 10%, rgba(255,10,10,1) 90%, rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,10,10,1) 10%, rgba(255,10,10,1) 90%, rgba(255,255,255,0) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,10,10,1) 10%, rgba(255,10,10,1) 90%, rgba(255,255,255,0) 100%);
+background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,10,10,1) 10%, rgba(255,10,10,1) 90%, rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+}
+
+
+
+nav .nav{
+    padding-left: 280px;
+  width: 1000px;margin:0 auto;
+  list-style: none;
+  font-size: 1.2rem;
+  
+}
+
+nav .nav > li{
+  padding: 5px 15px 10px;
+  display: inline-block;
+  color:#fff;font-weight: bold;
+  height: 20px;
+  transition:all 0.5s linear;
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav > li .dropdownmenu{display:none;}
+nav .nav > li:hover{
+  background:rgb(200,10,10);
+}
+nav .nav > li:hover .dropdownmenu{
+  display: block;
+    left: 0;
+    position: absolute;
+    top: 35px;
+    width: 1000px;
+    margin-bottom: 0px;
+    
+    
+}
+.dropdowntitles,.dropdowncontent{
+  float:left;
+  background: rgb(255,255,255);
+}
+.dropdowntitles{
+  width: 250px;
+  min-height:300px;
+    background:#eee;
+    border-bottom: 5px solid rgb(255,10,10);
+}
+
+.dropdowntitle{
+  background:#eee;
+  height: 30px;
+    padding: 10px 20px 0 10px;
+    border-bottom: 1px solid #fff;
+    font-size: 1.1rem;
+    color:#181818;
+
+    transition:all 0.2s ease-out;
+}
+
+.dropdowntitle:hover{
+    padding: 10px 10px 0 20px;
+    color: rgb(255,10,10);
+    z-index: 2;
+    position: initial;
+    background-color: #fff;
+}
+.ddcContent{
+  cursor: default;
+    display: none;
+    height: 300px;
+    position: absolute;
+    border-left: 2px solid #fff;
+    margin-left: 230px;
+    padding-left: 10px;
+    z-index: 0;
+    top: 0;
+    border-bottom: 5px solid rgb(255,10,10);
+    background-color: #fff;
+    color: #181818;
+}
+.ddcContent .links{
+  min-width: 200px;
+  float:left;
+}
+.ddcContent .links a{
+  color:#181818;
+}
+.ddcContent .links a:hover{
+  color:rgb(255,10,10);
+}
+.ddcContent .frontOffer{
+  float:right;
+  width: 300px;
+}
+.ddcContent .frontOffer img{
+width: 300px;
+}
+.ddcContent .links h3{
+  color:rgb(255,10,10);
+  padding-top: 5px;
+
+}
+.ddcContent .links ul li{
+  list-style: none;
+  color:#181818;
+  font-weight: normal;
+  font-size: 1rem;
+  padding:5px 0;
+
+}
+.dropdowntitle:hover .ddcContent{
+  display:block;
+}
+.ddcContent.magasin{
+  padding:0;
+}
+
+.ddcContent.magasin .frontOffer{
+  width: 510px;
+  position: relative;
+  height: 300px;
+}
+.ddcContent.magasin .frontOffer img{
+  width: 510px;
+}
+.ddcContent.magasin .frontOffer .adress{
+  position: absolute;
+  width: 100%;
+  bottom:0;
+  left: 0;
+  background:rgba(255,255,255,0.8);
+  color: rgb(255,10,10);
+  padding:10px 10px;
+  text-align: center;
+  box-sizing:border-box;
+}
+.ddcContent.magasin .frontOffer button.knowMore{
+  position: absolute;
+  border-radius: 5px;
+  top:65%;
+  right: 5%;
+  transform-origin:center center;
+  color: rgb(255,10,10);
+  text-align: center;
+  box-sizing:border-box;
+  border-radius: 5px;
+    box-shadow: 0 0 1px #111;
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    font-family: calibri;
+    font-size: 1.1rem;
+  background:rgb(255,10,10);
+  cursor:pointer;
+}
+
+.ddcContent.magasin .frontOffer button.knowMore:hover{
+background: rgba(204,21,18,1);
+background: -moz-linear-gradient(top, rgba(204,21,18,1) 0%, rgba(255,10,10,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(204,21,18,1)), color-stop(100%, rgba(255,10,10,1)));
+background: -webkit-linear-gradient(top, rgba(204,21,18,1) 0%, rgba(255,10,10,1) 100%);
+background: -o-linear-gradient(top, rgba(204,21,18,1) 0%, rgba(255,10,10,1) 100%);
+background: -ms-linear-gradient(top, rgba(204,21,18,1) 0%, rgba(255,10,10,1) 100%);
+background: linear-gradient(to bottom, rgba(204,21,18,1) 0%, rgba(255,10,10,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc1512', endColorstr='#ff0a0a', GradientType=0 );
+}

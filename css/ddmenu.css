@@ -1,0 +1,20 @@
+form#DDM_Items .panel{
+	margin: 10px 0 0;
+}
+form#DDM_Items::before{
+	content:'';
+	width:100%;
+	border-top:1px dashed #479bb7;
+}
+form#DDM_Items h3{
+	color: #479bb7;
+	font-size: 1.4em !important;
+	font-weight: bolder;
+
+}
+
+form#DDM_subItems h3{
+	color: #479bb7;
+	font-size: 1.2em !important;
+	font-style:italic;
+}
