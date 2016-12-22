@@ -6,7 +6,10 @@ This one is a 1st version of a module which can let you create a 3-steps menu.
 Installation
 ----------------------
 
-Just copy it into your "modules" folder and select which "hook" you want that it appears.
+Create a folder and rename it to "blockdropdownmenu"
+Copy those files into this folder
+Put that folder into your "modules" folder 
+
 
 
 Contact me if you have any question or bug. 
